@@ -36,7 +36,7 @@ public class Main {
                     if (isNumeric(removeItem)) {
                         int number = Integer.parseInt(removeItem);
                         System.out.println("Продукт " + productslist.get(number - 1) + " удален из списка покупок");
-                        productslist.remove(number - 1);
+                        productslist.remove(--number);
                     } else {
                         productslist.remove(removeItem);
                         System.out.println(removeItem + " удален из списка");
